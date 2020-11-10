@@ -634,6 +634,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-border-radius: 7px;
   border-radius: 7px;
 }
+
 .fh5co-project .fh5co-imgs .img-holder,
 .fh5co-project .fh5co-imgs .img-holder-1 {
   top: 30px;
@@ -660,6 +661,9 @@ h1, h2, h3, h4, h5, h6 {
   .fh5co-project .fh5co-imgs .img-holder-1 {
     right: 15px;
     margin-top: 0;
+  }
+  .fh5co-project.short .fh5co-imgs .img-holder{
+  left: 0;
   }
 }
 .fh5co-project .fh5co-imgs .img-holder-half:nth-child(2){
