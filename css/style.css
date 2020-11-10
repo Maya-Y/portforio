@@ -434,10 +434,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .fh5co-project {
   height: 100vh;
-  width: 100%;;
+  width: 100%;
   content: 'viewport-units-buggyfill; height:100vh; width:100%;';
   display: table;
   position: relative;
+}
+.fh5co-project.short{
+  padding-top: 20vh;
 }
 .fh5co-project:before {
   content: "";
@@ -465,7 +468,16 @@ h1, h2, h3, h4, h5, h6 {
     height: inherit !important;
     padding: 3em 0;
   }
-}.fh5co-project .fh5co-imgs
+  .fh5co-project.short{
+    padding: 3em 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fh5co-project.short{
+    margin-top: 3em 0;
+  }
+}
+.fh5co-project .fh5co-imgs
 .fh5co-project .fh5co-project-inner {
   display: table-cell;
   vertical-align: middle;
@@ -477,10 +489,9 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .fh5co-project .fh5co-project-inner {
     float: left;
-    width: 100%;
     height: inherit !important;
     padding: 0;
-    width: 100%;;
+    width: 100vw;
     content: 'viewport-units-buggyfill; width:100%;';
   }
 }
@@ -493,10 +504,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 80vh;
     position: relative;
   }
-  .fh5co-project .fh5co-imgs.short {
+  .fh5co-project.short .fh5co-imgs {
     margin-bottom: 0;
-    margin-top: 30px;
-    height: 65vh;
+    margin-top: 20px;
+    height: 40vh;
   }
 }
 @media screen and (max-width: 768px) {
@@ -504,17 +515,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
     height: 85vh;
   }
-  .fh5co-project .fh5co-imgs.short {
+  .fh5co-project.short .fh5co-imgs {
     margin-bottom: 30px;
     padding-top: 30px;
-    height: 41vh;
+    height: 26vh;
   }
 }
 @media screen and (max-width: 480px) {
   .fh5co-project .fh5co-imgs {
     height: 45vh;
   }
-  .fh5co-project .fh5co-imgs.short {
+  .fh5co-project.short .fh5co-imgs {
     margin-bottom: 30px;
     height: 35vh;
   }
@@ -523,6 +534,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   max-width: 90%;
   overflow-y: auto;
+  margin: 0 auto;
+}
+.fh5co-project.short .fh5co-imgs .img-holder{
+  height: 100%;
+  max-width: 90%;
+  overflow-y: visible;
   margin: 0 auto;
 }
 .fh5co-project .fh5co-imgs .img-holder-half{
@@ -686,7 +703,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 .fh5co-project.fh5co-reverse .img-holder-half:first-child{
-  left: auto;
+  left: 0;
   right: 0;
   top: 0;
 }
@@ -703,8 +720,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .fh5co-project.fh5co-reverse .img-holder-half:nth-child(2){
   bottom: 0;
-  right: auto;
-  left: 15px;
+  right: 0;
   top: 0;
 }
 .fh5co-project.fh5co-reverse .img-holder-2 {
@@ -756,6 +772,7 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-project .fh5co-text h2 {
   color: white;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 @media screen and (max-width: 480px) {
   .fh5co-project .fh5co-text h2 {
