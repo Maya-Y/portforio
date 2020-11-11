@@ -11,7 +11,7 @@
 *	Edit this section
 *
 * ======================================================= */
-html {
+/* html {
   background: #222222;
 }
 
@@ -63,8 +63,60 @@ h1, h2, h3, h4, h5, h6 {
 ::selection {
   color: #fff;
   background: #000;
+} */
+html {
+  background-color: #eeeeee;
 }
 
+body {
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  background: #eeeeee;
+  font-weight: 300;
+  opacity: 0;
+  color: #222;
+}
+
+a {
+  color: #333;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+a:hover, a:active, a:focus {
+  color: #333;
+  outline: none;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+p, figure {
+  margin-bottom: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: "Sawarabi Gothic", Times, serif;
+  font-weight: 400;
+  margin: 1.5em 0 1.5em 0;
+}
+
+::-webkit-selection {
+  color: #fff;
+  background: #333;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #000;
+}
+
+::selection {
+  color: #fff;
+  background: #333;
+}
 #fh5co-page {
   overflow: hidden;
 }
@@ -191,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-.btn-light {
+/* .btn-light {
   background: #fff;
   color: #fff;
   border: 2px solid #fff;
@@ -208,6 +260,37 @@ h1, h2, h3, h4, h5, h6 {
 .btn-light.btn-outline:hover, .btn-light.btn-outline:focus, .btn-light.btn-outline:active {
   background: #fff;
   color: #000;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid gray;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
+  box-shadow: none;
+} */
+
+.btn-light {
+  background: #000;
+  color: #000;
+  border: 2px solid #000;
+}
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  background: #000;
+  border-color: #000;
+}
+.btn-light.btn-outline {
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+}
+.btn-light.btn-outline:hover, .btn-light.btn-outline:focus, .btn-light.btn-outline:active {
+  background: #000;
+  color: #fff;
 }
 
 .btn-outline {
@@ -311,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  color: #fff;
+  color: #333;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -385,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-next a span {
   display: block;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 300;
@@ -398,7 +481,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0.5s;
   transition: 0.5s;
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.4);
   color: #ffab00;
 }
 @media screen and (max-width: 480px) {
@@ -407,10 +490,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .btn-next a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 .btn-next a:hover span {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 .btn-next a:hover i {
   color: #ffab00;
@@ -449,7 +532,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   height: 2px;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.03);
   width: 101%;
   -webkit-transform: skewY(-7deg);
   -moz-transform: skewY(-7deg);
@@ -553,13 +636,14 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 80%;
   overflow-y: auto;
   /* padding-right: 20px; */
+  /* box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49); */
 }
 .fh5co-project .fh5co-imgs .img-holder-2{
   height: 58%;
   max-width: 200px;
   width: 100%;
   overflow-y: auto;
-  box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49);
+  /* box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49); */
 }
 @media screen and (max-width: 768px) {
 
@@ -621,11 +705,11 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-project .fh5co-imgs .img-holder-1 img,
 .fh5co-project .fh5co-imgs .img-holder-2 img {
   max-width: 100%;
-  -webkit-box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49);
+  /* -webkit-box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49);
   -moz-box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49);
   -ms-box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49);
   -o-box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49);
-  box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49);
+  box-shadow: 6px 24px 61px -12px rgba(0, 0, 0, 0.49); */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -707,7 +791,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 .fh5co-project.fh5co-reverse .img-holder-half:first-child{
-  left: 0;
+  left: 15px;
   right: 0;
   top: 0;
 }
@@ -774,7 +858,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .fh5co-project .fh5co-text h2 {
-  color: white;
+  color: #333;
   margin-bottom: 20px;
   font-size: 25px;
 }
@@ -784,7 +868,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .fh5co-project .fh5co-text p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 0.8em;
   line-height: 1.5em;
 }
@@ -813,7 +897,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#fh5co-footer {
+/* #fh5co-footer {
   padding: 7em 0em;
   color: rgba(255, 255, 255, 0.2);
   position: relative;
@@ -826,6 +910,26 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   height: 1px;
   background: rgba(255, 255, 255, 0.1);
+  width: 101%;
+  -webkit-transform: skewY(-7deg);
+  -moz-transform: skewY(-7deg);
+  -ms-transform: skewY(-7deg);
+  -o-transform: skewY(-7deg);
+  transform: skewY(-7deg);
+} */
+#fh5co-footer {
+  padding: 7em 0em;
+  color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+#fh5co-footer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
   width: 101%;
   -webkit-transform: skewY(-7deg);
   -moz-transform: skewY(-7deg);
@@ -1169,13 +1273,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fh5co-project ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 .fh5co-project ::-webkit-scrollbar-track {
-  background: #202020;
+  background: none;
+  opacity: 0;
   border-radius: 10px;
 }
 .fh5co-project ::-webkit-scrollbar-thumb {
-  background: #575757;
+  background: #bdbdbd;
   border-radius: 10px;
 }
